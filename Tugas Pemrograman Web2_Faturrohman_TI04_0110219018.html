@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Registrasi</title>
+    <style>
+        #card {
+            height: 740px;
+            width: 800px;
+            margin: auto; 
+        }
+        .right{
+            margin-left: auto;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+    <form action="tugas pemrograman web2_faturrohman_TI04 (0110219018).html" method="POST">
+        <header style="color: turquoise; font-family: 'Times New Roman', Times, serif;">
+            <h1>STUDENT REGISTRATION FORM</h1>
+        </header>
+        <br><br>
+        <table class="right">
+            <tr>
+                <td>DATE</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+        </table>
+        <br/><br/>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">PERSONAL INFORMATION</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label>NAME</label></td>
+                <td><input type="text" name="NAME" style="width: 660px;" required></td>
+            </tr>
+            <tr>
+                <td><label>DATE OF BIRTH</label></td>
+                <td><input type="date" name="date" style="width: 660px;" required></td>
+            </tr>
+        </table>
+        <br/>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">CONTACT INFORMATION</h2>
+        <hr/>
+        <table>
+            <tr>
+                <td>ADDRESS</td>
+                <td><input type="text" name="address" style="width: 360px;" required></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city" required></td>
+                <td>PROVINCE/STATE</td>
+                <td><input type="text" name="prov" required></td>
+            </tr>
+            <tr>
+                <td>ZIP CODE</td>
+                <td><input type="number" name="zipcode" required></td>
+                <td>COUNTRY</td>
+                <td><input type="text" name="country" value="" required></td>
+            </tr>
+            <tr>
+                <td>PHONE</td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+                <td>EMAIL</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>MEMBERSHIP</td>
+                <td>
+                    <input type="radio" name="member" value="regural" required>REGULAR
+                    <input type="radio" name="member" value="premium" required>PREMIUM
+                    <input type="radio" name="member" value="vip" required>VIP
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <h2 style="font-family: 'Times New Roman', Times, serif;">COURSE INFORMATION</h2>
+        <hr/>
+        <table>
+            <tr>
+                <td>COURSE NAME</td>
+                <td><input type="text" name="course" style="width: 665PX;" required></td>
+            </tr>
+            <tr>
+                <td>PAYMENT DETAILS</td>
+                <td>
+                    <input type="radio" name="payment" value="cash" required>CASH
+                    <input type="radio" name="payment" value="cheque" required>CHEQUE
+                    <input type="radio" name="payment" value="credit" required>CREDIT CARD
+                </td>
+            </tr>
+            <tr>
+                <td>COMMENTS</td>
+                <td><input type="text" name="comments" style="width: 665px;"></td>
+            </tr>
+        </table>
+        <br>
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <textarea name="signature" cols="50" rows="4" placeholder="students signature"></textarea>
+                    </td>
+                    <td>
+                        <textarea name="validate" cols="50" rows="4" placeholder="validate by"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+                <input type="submit" value="SUBMIT">
+        </footer>
+    </form>
+    </div>
+</body>
+</html>
